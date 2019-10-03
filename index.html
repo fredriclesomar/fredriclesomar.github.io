@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+
+  <!-- TODO 3 - set the visual viewport -->
+  <meta name="viewport" content="width=device-width,  initial-scale=1">
+  <script type="text/javascript" src="js/idb.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <title>Fredric Lesomar Page's</title>
+
+  <!-- TODO 6.1 - include custom Modernizr build -->
+  <script src="modernizr-custom.js"></script>
+
+  <link rel="stylesheet" href="style/temp.css">
+  
+  <style>
+  /* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+} 
+
+ /* Style the content */
+aside {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+ </style> 
+  
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand">Welcome</a>
+    </div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+     <ul class="nav navbar-nav navbar-right">
+      <li><a href="https://instagram.com/fredricls"><img border="0" src="https://img.icons8.com/bubbles/50/000000/instagram-new.png" title="Instagram" width="30" height="30"></a></li>
+      <li><a href="https://www.facebook.com/fredriclesomar.id"><img border="0" src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" title="facebook" width="30" height="30"></a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class='container'>
+  <div class="col">
+    <figure>
+        <img id="sfo" src="images/touch/16724238.jpg" 
+    sizes="(max-width: 100px) 90vw, 50vw"
+    srcset="images/touch/16724238.jpg 1600w,  
+      images/touch/16724238.jpg 1000w,  
+      images/touch/16724238.jpg 800w, 
+      images/touch/16724238.jpg 500w"
+      alt="Dodge Challenger" class="img-circle">
+
+    <h1 style="border: 2px solid Tomato;" >Who Am I?</h1>
+    </figure>
+	<section>
+		<article>
+		<b><p style="background-color:rgb(60, 179, 113);">My Name is Lesomar Fredric.</p></b>
+		<p>I am an ameteur programer and a student of STMIK Akakom who is studying to become a programer.</p>
+		</article>
+		<aside>
+		<b><p style="background-color:rgb(60, 179, 113);">Where to find me?</p></b>
+		<p>if you want to find me, you can meet me at STMIK Akakom or at my house in Sleman.</p>
+		</aside>
+	</section>
+	</div>
+</div>
+ 
+<footer class="container-fluid bg-4 text-center">
+ <p>copyright © 2019 redvelvet | Touch with <span style="color: #e25555;">&#9829;</span><a href="https://mailto:fredriclesomar@gmail.com"> Fredric Lesomar</a></p> 
+ <p id="timeiswaktu">Powered by Youndame</p>
+</footer>
+
+  <script>
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('redvelvet.js')
+        .then(function(registration) {
+          console.log('Service Worker registration successful with scope: ',
+          registration.scope);
+        })
+        .catch(function(err) {
+          console.log('Service Worker registration failed: ', err);
+        });
+    }
+
+var timeDisplay = document.getElementById("timeiswaktu");
+
+
+function refreshTime() {
+  var dateString = new Date().toLocaleString("id-ID", {timeZone: "Asia/Jakarta"});
+  var formattedString = dateString.replace(", ", " - ");
+  timeDisplay.innerHTML = formattedString;
+}
+
+setInterval(refreshTime, 1000);
+  </script>
+</body>
+</html>

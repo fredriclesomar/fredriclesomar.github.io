@@ -1,0 +1,85 @@
+/* main.css */
+
+.container {
+  overflow: auto;
+  align-items: center;
+  margin-top: 5em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.6em;
+   font-family: 'Roboto condensed', sans-serif;
+
+}
+
+.container .col {
+    width: 100%;
+    padding: 30px 3.15% 0;
+    float: left;
+    align-items: center;
+}
+.container .col1 {
+    width: 33%;
+    padding: 30px 3.15% 0;
+    float: left;
+}
+.container .col2 {
+    width: 40%;
+    padding: 30px 3.15% 0;
+    float: left;
+}
+
+/* TODO 3 - style the page */
+
+/* TODO 4 - use media query */
+@media	screen	and	(max-width:	48rem)	{
+		.container	.col	{
+				width:	95%;
+		}
+		.container	.col1	{
+				width:	90%;
+		}
+		.container	.col2	{
+				width:	90%;
+		}
+}
+/* TODO 2 - set the image max-width */
+img {
+    max-width:  100%;
+}
+
+/* TODO 4.1 - display the SFO image at 50vw */
+img#sfo {
+    transition: width 0.5s;
+    max-width:  500vw;
+}
+img#sfo1 {
+    transition: width 0.5s;
+    width:  80%;
+}
+
+/* TODO 5.1 - add a media query */
+
+@media  screen  and (max-width: 700px)  {
+    img#sfo {
+        max-width:  90vw;
+        width:  90vw;
+    }
+}
+figure {
+  margin: 1em 0 1em 0;
+
+}
+.bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+
+
+ .fa-custom-icon {
+
+
+     color: #F73333;
+
+
+} 
