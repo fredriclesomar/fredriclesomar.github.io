@@ -51,7 +51,7 @@ img {
 /* TODO 4.1 - display the SFO image at 50vw */
 img#sfo {
     transition: width 0.5s;
-    max-width:  200vw;
+    max-width:  50vw;
 }
 img#sfo1 {
     transition: width 0.5s;
