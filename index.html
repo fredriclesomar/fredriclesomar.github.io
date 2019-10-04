@@ -75,11 +75,54 @@ img:hover {
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#status {
+  top: 80px;
+  background-color: #4CAF50;
+}
+
+#otaku {
+  top: 120px;
+  background-color: #2196F3;
+}
+
+#news {
+  top: 160px;
+  background-color: #f44336;
+}
+
+h5 {
+  text-decoration: underline overline;
+}
  </style> 
   
 </head>
 
 <body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="https://github.com/fredriclesomar/fredriclesomar.github.io/archive/master.zip" id="status">Download Template</a>
+  <a id="otaku" >My Brain</a>
+  <a href="#" id="news">News</a>
+</div>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -88,12 +131,13 @@ img:hover {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand">Welcome</a>
+      <a class="navbar-brand">WELCOME</a>
+	   <h5><a style="font-family:courier;">live has begun</a></h5>
     </div>
 	<div class="collapse navbar-collapse" id="myNavbar">
      <ul class="nav navbar-nav navbar-right">
-      <li><a href="https://instagram.com/fredricls"><img border="0" src="https://img.icons8.com/bubbles/50/000000/instagram-new.png" title="Instagram" width="30" height="30"></a></li>
-      <li><a href="https://www.facebook.com/fredriclesomar.id"><img border="0" src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" title="facebook" width="30" height="30"></a></li>
+      <li><a href="https://instagram.com/fredricls"><img border="0" src="https://img.icons8.com/bubbles/50/000000/instagram-new.png" title="Instagram" width="45" height="45"></a></li>
+      <li><a href="https://www.facebook.com/fredriclesomar.id"><img border="0" src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" title="facebook" width="45" height="45"></a></li>
     </ul>
   </div>
   </div>
