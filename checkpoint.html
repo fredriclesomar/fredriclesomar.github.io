@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- TODO 3 - set the visual viewport -->
+  <meta name="viewport" content="width=device-width,  initial-scale=1">
+  <script type="text/javascript" src="js/idb.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <title>Fredric Lesomar Page's</title>
+
+  <!-- TODO 6.1 - include custom Modernizr build -->
+  <script src="modernizr-custom.js"></script>
+
+  <link rel="stylesheet" href="style/temp.css">
+  
+  <style>
+  /* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+} 
+
+ /* Style the content */
+aside {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+
+
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#status {
+  top: 80px;
+  background-color: #4CAF50;
+}
+
+#otaku {
+  top: 120px;
+  background-color: #2196F3;
+}
+
+#news {
+  top: 160px;
+  background-color: #f44336;
+}
+
+#sewot {
+  top: 200px;
+  background-color: #f44334;
+}
+
+
+h5 {
+  text-decoration: underline overline;
+}
+ </style> 
+  
+</head>
+
+<body>
+<!--
+<div id="mySidenav" class="sidenav">
+  <a href="https://github.com/fredriclesomar/fredriclesomar.github.io/archive/master.zip" id="status">Download Template</a>
+  <a id="otaku" >My Brain</a>
+  <a href="index.html" id="news">Home</a>
+</div>
+-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="index.html" class="navbar-brand">WELCOME</a>
+	   <h5><a style="font-family:courier;">live has begun</a></h5>
+    </div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+     <ul class="nav navbar-nav navbar-right">
+      <li><a href="https://instagram.com/fredricls"><img border="0" src="https://img.icons8.com/bubbles/50/000000/instagram-new.png" title="Instagram" width="45" height="45"></a></li>
+      <li><a href="https://www.facebook.com/fredriclesomar.id"><img border="0" src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" title="facebook" width="45" height="45"></a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+<div class='container'>
+  <div class="col">
+    <h1></h1>
+   <iframe src="https://threatmap.checkpoint.com/" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none;"> 
+</iframe> 
+	</div>
+</div>
+
+<footer class="container-fluid bg-4 text-center">
+ <p>Copyright © 2019 redvelvet | Touch with <span style="color: #e25555;">&#9829;</span><a href="https://mailto:fredriclesomar@gmail.com"> Fredric Lesomar</a></p> 
+ <p id="timeiswaktu">Powered by Yondaime</p>
+</footer>
+
+  <script>
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('redvelvet.js')
+        .then(function(registration) {
+          console.log('Service Worker registration successful with scope: ',
+          registration.scope);
+        })
+        .catch(function(err) {
+          console.log('Service Worker registration failed: ', err);
+        });
+    }
+
+var timeDisplay = document.getElementById("timeiswaktu");
+
+
+function refreshTime() {
+  var dateString = new Date().toLocaleString("id-ID", {timeZone: "Asia/Jakarta"});
+  var formattedString = dateString.replace(", ", " - ");
+  timeDisplay.innerHTML = formattedString;
+}
+
+setInterval(refreshTime, 1000);
+  </script>
+</body>
+</html>
