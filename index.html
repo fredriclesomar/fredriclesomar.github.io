@@ -153,13 +153,13 @@ p {
 <div class='container'>
   <div class="col">
     <figure>
-        <img id="sfo" src="images/me.jpg" 
+       <canvas id="town"> <img id="sfo" src="images/me.jpg" 
     sizes="(max-width: 100px) 90vw, 50vw"
     srcset="images/me.jpg 1600w,  
       images/me.jpg 1000w,  
       images/me.jpg 800w, 
       images/me.jpg 500w"
-      alt="Dodge Challenger" alt="Pineapple" class="img-circle">
+      alt="Dodge Challenger" alt="Pineapple" class="img-circle"></canvas>
 
     <h1 style="border: 2px solid Tomato;" >Who Am I?</h1>
     </figure>
@@ -206,5 +206,69 @@ function refreshTime() {
 
 setInterval(refreshTime, 1000);
   </script>
+	
+	
+	
+<script type="text/javascript">
+
+var canvas = document.getElementById("town"),
+ctx = canvas.getContext("2d"),
+W = canvas.width,
+H = canvas.height,
+maxParticles = 25,
+maxParticleSize = 8,
+minParticleSize = 2,
+maxMove = 1,
+angle = 0,
+particles = [];
+	for (var i = 0; i < maxParticles; i++) {
+		particles.push({
+			x: Math.random() * W, 
+			y: Math.random() * H, 
+			wh: Math.random() * maxParticleSize + minParticleSize
+		})
+	}
+	
+function draw() {
+    ctx.clearRect(0, 0, W, H);
+    ctx.beginPath();
+		for (var i = 0; i < maxParticles; i++) {
+			var p = particles[i];
+			ctx.moveTo(p.x, p.y);
+      ctx.rect(p.x, p.y, p.wh, p.wh);
+      var radgrad = ctx.createRadialGradient(p.x + p.wh/2,p.y + p.wh/2,0,p.x + p.wh/2,p.y + p.wh/2,p.wh/2);
+  radgrad.addColorStop(0, 'rgba(255, 255, 255, 1)');
+  radgrad.addColorStop(0.5, 'rgba(255, 255, 255, .8)');
+  radgrad.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.fillStyle = radgrad;
+      ctx.fill();
+		}
+		update();
+	}
+	
+	function update() {
+		angle += 0.01;
+		for (var i = 0; i < maxParticles; i++) {
+			var p = particles[i];
+			p.y += Math.cos(angle) + p.wh/4;
+			p.x += Math.sin(angle) * 2;
+			if (p.x > W+maxMove || p.x < -maxMove || p.y > H) {
+				if (i%3 > 0) {
+					particles[i] = {x: Math.random() * W, y: -(maxMove), wh: p.wh };
+				} else {
+					if (Math.sin(angle) > 0) {
+						particles[i] = {x: -maxMove, y: Math.random()*H, wh: p.wh };
+					} else {
+						particles[i] = {x: W+maxMove, y: Math.random()*H, wh: p.wh };
+					}
+				}
+			}
+		}
+  requestAnimationFrame(draw);
+	}
+draw();	
+
+</script>
+	
 </body>
 </html>
