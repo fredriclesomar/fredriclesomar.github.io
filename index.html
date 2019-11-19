@@ -28,6 +28,15 @@ article {
   padding: 10px;
 } 
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+   opacity: 0.8;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
  /* Style the content */
 aside {
   -webkit-flex: 3;
@@ -124,6 +133,11 @@ p {
 </head>
 
 <body>
+<video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+	
 <div id="mySidenav" class="sidenav">
   <a href="https://github.com/fredriclesomar/fredriclesomar.github.io/archive/master.zip" id="status">Download Template</a>
   <a href="kspmaps.html" id="otaku" >CYBERTHREAT - Kaspersky</a>
@@ -201,5 +215,10 @@ function refreshTime() {
 
 setInterval(refreshTime, 1000);
   </script>
+
+<script>
+var video = document.getElementById("myVideo");
+</script>
+
 </body>
 </html>
