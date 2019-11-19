@@ -70,6 +70,7 @@ article {
 }
 
 body {
+  background-color: #242424;
   align-items: center;
   display: flex;
   flex-direction: column;
