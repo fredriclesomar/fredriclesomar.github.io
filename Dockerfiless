@@ -1,0 +1,46 @@
+======Dockerfile============
+
+FROM alpine
+RUN apk add --update lighttpd
+COPY etc/lighttpd/* /etc/lighttpd/
+COPY var/www/html/* var/www/html/
+EXPOSE 80
+
+CMD ["lighttpd", "-D", "-f", "/etc/lighttpd/lighttpd.conf"]
+
+
+
+===========================================================================!
+
+A.Buat direktory dalam direktory web:
+- mkdir -p var/www/html		
+- mkdir -p etc/lighttpd
+
+B. Buat file lighttpd file config:
+- nano etc/lighttpd/lighttpd.conf
+
+server.document-root = "var/www/html/"
+server.port = 80
+server.indexfiles = ("index.html")
+mimetype.assign = (".html" => "text/html")
+
+----save----
+
+C. Konten index.html <bebas>
+
+D. Membuat image docker:
+docker build -t webNIM
+
+E. Menjalankan image menjadi container:
+- docker run -d --name myweb -p 8080:80 <nama-image-web>
+
+=======PUSH to DOCKER HUB========
+
+F. docker login
+G. docker tag <nama-image-web> fredricls/quisCloud
+H. docker push fredricls/quisCloud
+
+
+
+
+
