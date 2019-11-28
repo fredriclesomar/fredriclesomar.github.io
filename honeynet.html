@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="https://fredriclesomar.github.io/images/ico.png">
+  <title>Fredric Lesomar Page's</title>
 
+  <meta name="description" content="FredricLesomar.id, Fredric Lesomar, Lesomar" />
+  <meta name="keywords" content="Fredric Lesomar, fredricls" />
   <meta name="viewport" content="width=device-width,  initial-scale=1">
-  <script type="text/javascript" src="js/idb.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="https://fredriclesomar.github.io/js/idb.js"></script>
+  <script type="text/javascript" src="https://fredriclesomar.github.io/js/main.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-  <title>Fredric Lesomar Page's</title>
-
   <script src="modernizr-custom.js"></script>
-  <link rel="stylesheet" href="style/temp.css">
-  
+  <link rel="stylesheet" href="https://fredriclesomar.github.io/style/temp.css">
   <style>
+body {
+  background-color: #242424;
+  padding-bottom:60px; 
+}
   /* Style the content */
 article {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
-  background-color: #f1f1f1;
+  background-color: #2f2e2e;
   padding: 10px;
 } 
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+   opacity: 0.1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
  /* Style the content */
 aside {
   -webkit-flex: 3;
   -ms-flex: 3;
   flex: 3;
-  background-color: #f1f1f1;
+  background-color: #2f2e2e;
   padding: 10px;
 }
-
-
 
 function startTime() {
   var today = new Date();
@@ -47,12 +58,11 @@ function startTime() {
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
+
 function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
 }
-
-
 
 img:hover {
   animation: shake 0.5s;
@@ -73,7 +83,6 @@ img:hover {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-
 #mySidenav a {
   position: absolute;
   left: -80px;
@@ -82,7 +91,7 @@ img:hover {
   width: 100px;
   text-decoration: none;
   font-size: 10px;
-  color: white;
+  color: #ffffff;
   border-radius: 0 5px 5px 0;
 }
 
@@ -110,20 +119,52 @@ img:hover {
   background-color: #b44334;
 }
 
+#tespeed {
+  top: 240px;
+  background-color: #f39c12;
+}
+
+#whois {
+  top: 280px;
+  background-color: #7d3c98;
+}
+
+#chiper {
+  top: 320px;
+  background-color: #909497;
+}
+	  
+h1 {
+  color: white;
+}
+	  
 h5 {
   text-decoration: underline overline;
+  font-size: 10px;
 }
- </style> 
-  
+	  
+p {
+    color: white;
+}
+	  
+.navbarbot {
+  height:60px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style> 
 </head>
 
 <body>
-
 <div id="mySidenav" class="sidenav">
   <a href="https://github.com/fredriclesomar/fredriclesomar.github.io/archive/master.zip" id="status">Download Template</a>
-  <a href="kspmaps.html" id="otaku" >CYBERTHREAT - kaspersky</a>
-  <a href="index.html" id="news">Home</a>
-  <a href="checkpoint.html" id="sewot">CYBERTHREAT - Checkpoint</a>
+  <a href="https://fredriclesomar.github.io/kspmaps.html" id="otaku" >CYBERTHREAT - Kaspersky</a>
+  <a href="https://fredriclesomar.github.io/honeynet.html" id="news">Honeynet - Bssn</a>
+  <a href="https://fredriclesomar.github.io/checkpoint.html" id="sewot">CYBERTHREAT - Checkpoint</a>
+  <a href="https://fredriclesomar.github.io/testspeed" id="tespeed">TEST SPEED</a>
+  <a href="https://fredriclesomar.github.io/whois" id="whois">WHOIS</a>
+  <a href="https://fredriclesomar.github.io/chiper" id="chiper">CHIPER - VIGENERE</a>
 </div>
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -135,12 +176,12 @@ h5 {
         <span class="icon-bar"></span>                        
       </button>
       <a class="navbar-brand">WELCOME</a>
-	   <h5><a style="font-family:courier;">live has begun</a></h5>
+	   <h5><a style="font-family:courier;">life had just begun</a></h5>
     </div>
 	<div class="collapse navbar-collapse" id="myNavbar">
      <ul class="nav navbar-nav navbar-right">
-      <li><a href="https://instagram.com/fredricls"><img border="0" src="https://img.icons8.com/bubbles/50/000000/instagram-new.png" title="Instagram" width="45" height="45"></a></li>
-      <li><a href="https://www.facebook.com/fredriclesomar.id"><img border="0" src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" title="facebook" width="45" height="45"></a></li>
+      <li><a href="https://instagram.com/fredricls"><img border="0" src="https://fredriclesomar.github.io/images/ins.png" title="Instagram" width="45" height="45"></a></li>
+      <li><a href="https://www.facebook.com/fredriclesomar.id"><img border="0" src="https://fredriclesomar.github.io/images/fab.png" title="facebook" width="45" height="45"></a></li>
     </ul>
   </div>
   </div>
@@ -148,20 +189,18 @@ h5 {
 <div class='container'>
   <div class="col">
     <h1></h1>
-   <iframe width="1150" height="700" src="https://honeynet.bssn.go.id/" style="border:none;"> 
-</iframe> 
+<script type='text/javascript'> str='@20@20@20@3C@69@66@72@61@6D@65@20@77@69@64@74@68@3D@22@31@30@30@25@22@20@68@65@69@67@68@74@3D@22@36@30@30@70@78@22@20@73@72@63@3D@22@68@74@74@70@73@3A@2F@2F@68@6F@6E@65@79@6E@65@74@2E@62@73@73@6E@2E@67@6F@2E@69@64@2F@22@20@73@74@79@6C@65@3D@22@62@6F@72@64@65@72@3A@6E@6F@6E@65@3B@22@3E@20@0A@3C@2F@69@66@72@61@6D@65@3E'; document.write(unescape(str.replace(/@/g,'%'))); </script>
 	</div>
-</div>
-
-<footer class="container-fluid bg-4 text-center">
+</div><center>
+ 
+</center>
+<footer class="container-fluid bg-4 text-center navbarbot">
  <p>Copyright © 2019 Rose | Touch with <span style="color: #e25555;">&#9829;</span><a href="https://mailto:fredriclesomar@gmail.com"> Fredric Lesomar</a></p> 
  <p id="timeiswaktu">Powered by Yondaime</p>
 </footer>
-
   <script>
-
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('redvelvet.js')
+      navigator.serviceWorker.register('rose.js')
         .then(function(registration) {
           console.log('Service Worker registration successful with scope: ',
           registration.scope);
@@ -170,10 +209,7 @@ h5 {
           console.log('Service Worker registration failed: ', err);
         });
     }
-
 var timeDisplay = document.getElementById("timeiswaktu");
-
-
 function refreshTime() {
   var dateString = new Date().toLocaleString("id-ID", {timeZone: "Asia/Jakarta"});
   var formattedString = dateString.replace(", ", " - ");
@@ -182,5 +218,9 @@ function refreshTime() {
 
 setInterval(refreshTime, 1000);
   </script>
+
+<script>
+var video = document.getElementById("myVideo");
+</script>
 </body>
 </html>
