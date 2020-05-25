@@ -7,5 +7,3 @@
 > Welcome Page (Mobile_
   <img src="https://raw.githubusercontent.com/fredriclesomar/fredriclesomar.github.io/master/images/2.png" width="750" title="Tampilan Mobile">
 </p>
-
-<a href="https://fredriclesomar.github.io/">Demo</a>
