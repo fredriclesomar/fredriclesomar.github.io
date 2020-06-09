@@ -1,232 +1,528 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="images/ico.png">
-  <title>Fredric Lesomar Page's</title>
-
-  <meta name="description" content="FredricLesomar.id, Fredric Lesomar, Lesomar" />
-  <meta name="keywords" content="Fredric Lesomar, fredricls" />
-  <meta name="viewport" content="width=device-width,  initial-scale=1">
-  <script type="text/javascript" src="js/idb.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="style.js"></script>
-  <link rel="stylesheet" href="style/temp.css">
-  <style>
-body {
-  background-color: #242424;
-  padding-bottom:60px; 
-}
-  /* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #2f2e2e;
-  padding: 10px;
-} 
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-   opacity: 0.1;
-  filter: alpha(opacity=100); /* For IE8 and earlier */
-}
- /* Style the content */
-aside {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #2f2e2e;
-  padding: 10px;
-}
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('txt').innerHTML =
-  h + ":" + m + ":" + s;
-  var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-  return i;
+<title>Fredric Lesomar Page's</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
 }
 
-img:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
+a {
+  color: white;
 }
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-#mySidenav a {
-  position: absolute;
-  left: -80px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 100px;
-  text-decoration: none;
-  font-size: 10px;
-  color: #ffffff;
-  border-radius: 0 5px 5px 0;
-}
-
-#mySidenav a:hover {
-  left: 0;
-}
-
-#status {
-  top: 80px;
-  background-color: #4CAF50;
-}
-
-#otaku {
-  top: 120px;
-  background-color: #2196F3;
-}
-
-#news {
-  top: 160px;
-  background-color: #f44336;
-}
-
-#sewot {
-  top: 200px;
-  background-color: #b44334;
-}
-
-#tespeed {
-  top: 240px;
-  background-color: #f39c12;
-}
-
-#whois {
-  top: 280px;
-  background-color: #7d3c98;
-}
-
-#chiper {
-  top: 320px;
-  background-color: #909497;
-}
-	  
 h1 {
   color: white;
 }
-	  
+h2 {
+  color: white;
+}
+
 h5 {
-  text-decoration: underline overline;
-  font-size: 10px;
+  color: white;
 }
-	  
 p {
-    color: white;
+  color: white;
 }
-	  
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  opacity: 1.5;
+  padding: 80px;
+  text-align: center;
+  background-image: url("images/bg.gif");
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  background-color: #666;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #242424;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #2f2e2e;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  background-color: #666;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+img.a {
+  border-radius: 50%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.containerabout {
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.containerabout::after, .row::after {
+  content: "";
+  background-color: #666;
+  clear: both;
+  text-align: center;
+  display: table;
+}
+
+.titleabout {
+  color: grey;
+}
+div.a {
+  text-align: center;
+}
+div.b {
+  text-align: left;
+}
+
+
+* {box-sizing: border-box}
+
+.containerskill {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.linux {width: 97%; background-color: #4CAF50;}
+.windows {width: 86%; background-color: #2196F3;}
+.js {width: 89%; background-color: #f44336;}
+.php {width: 77%; background-color: #808080;}
+.python {width: 87%; background-color: #808060;}
+.redteam {width: 93%; background-color: #806060;}
+.docker {width: 88%; background-color: #105080;}
+.git {width: 90%; background-color: #809090;}
+.wordpress {width: 76%; background-color: #812060;}
+.idps {width: 84%; background-color: #801040;}
+
 .navbarbot {
-  height:60px;
+  height:100px;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
-</style> 
-</head>
 
+
+.collapsiblemen {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsiblemen:hover {
+  background-color: #555;
+}
+
+.collapsiblemen:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.contentberguna {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #003322;
+}
+
+
+
+.glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #dee010, 0 0 40px #dee010, 0 0 50px #dee010, 0 0 60px #dee010, 0 0 70px #dee010, 0 0 80px #dee010;
+  }
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  top: 0;
+}
+
+.topnav a {
+  position: sticky;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* Right-aligned link */
+.topnav a.right {
+  float: right;
+}
+
+
+.active {
+  background-color: #d82d2d;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+</head>
 <body>
-<audio loop autoplay>
-  <source src="misc/Tanah_Airku.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<video autoplay muted loop id="myVideo">
-  <source src="images/bg.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
-	
-<div id="mySidenav" class="sidenav">
-  <a href="https://github.com/fredriclesomar/fredriclesomar.github.io/archive/master.zip" id="status">Download Template</a>
-  <a href="kspmaps.html" id="otaku" >CYBERTHREAT - Kaspersky</a>
-  <a href="honeynet.html" id="news">Honeynet - Bssn</a>
-  <a href="checkpoint.html" id="sewot">CYBERTHREAT - Checkpoint</a>
-  <a href="testspeed" id="tespeed">TEST SPEED</a>
-  <a href="https://fredriclesomar.github.io/whois" id="whois">WHOIS</a>
-  <a href="https://fredriclesomar.github.io/chiper" id="chiper">CHIPER - VIGENERE</a>
+
+<div class="header">
+  <h1>WELCOME</h1>
+  <p>A <b>life</b> had just begun</p>
+</div>
+<!--hide
+<div class="topnav navbar"  id="myTopnav">
+  <a href="#" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Cyberthread Monitoring
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">BSSN-RI</a>
+      <a href="#">Checkpoint</a>
+      <a href="#">Kaspersky</a>
+    </div>
+    </div>
+  <a class="right">Goal Status</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+-->
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Cyberthread Monitoring 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	  <a href="#">BSSN-RI</a>
+      <a href="#">Checkpoint</a>
+      <a href="#">Kaspersky</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Tools 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	  <a href="#">Vigenere Chipher</a>
+      <a href="#">Whois</a>
+    </div>
+  </div> 
+  <a class="right">Goal Status</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand">WELCOME</a>
-	   <h5><a style="font-family:courier;">life had just begun</a></h5>
-    </div>
-	<div class="collapse navbar-collapse" id="myNavbar">
-     <ul class="nav navbar-nav navbar-right">
-      <li><a href="https://instagram.com/fredricls"><img border="0" src="images/ins.png" title="Instagram" width="45" height="45"></a></li>
-      <li><a href="https://www.facebook.com/fredriclesomar.id"><img border="0" src="images/fab.png" title="facebook" width="45" height="45"></a></li>
-      <li><a href="https://www.hackthebox.eu/profile/305771"><img border="0" src="images/htb.png" title="HackTheBox" width="130" height="45"></a></li>
-    </ul>
-  </div>
-  </div>
-</nav>
-<div class='container'>
-  <div class="col">
-    <figure>
-       <img id="sfo" src="images/me.jpg" 
-    sizes="(max-width: 100px) 90vw, 50vw"
-    srcset="images/me.jpg 1600w,  
-      images/me.jpg 1000w,  
-      images/me.jpg 800w, 
-      images/me.jpg 500w"
-      alt="Dodge Challenger" alt="Pineapple" class="img-circle">
-
-	 <center>
-	<img> <script src="https://www.hackthebox.eu/badge/305771"></script> </img></center>
-    <h1 style="border: 2px solid Tomato;" >Who Am I?</h1>
-    </figure>
-	<section>
-		<article>
-		<b><p style="background-color:rgb(60, 179, 113);">My Name is Lesomar Fredric.</p></b>
+<div class="row">
+  <div class="side">
+    <div class="card">
+     <div class="a"><img class="a" src="https://raw.githubusercontent.com/fredriclesomar/fredriclesomar.github.io/master/images/me.jpg" alt="Fredric Lesomar" style="width:200px"></center>
+      <div class="a">
+        <h2 class="glow">Fredric Lesomar</h2>
+		<a><img border="0" src="images/icon/att.png" title="RedTeam" width="35" height="45"></a>
+		<a><img border="0" src="images/icon/su.png" title="SuperUser" width="45" height="45"></a>
+		<a><img border="0" src="images/icon/def.png" title="BlueTeam" width="45" height="45"></a>
+		<center><img><script src="https://www.hackthebox.eu/badge/305771"></script></img></center>		
 		<p>I am an ameteur programer and network security enthusiast.</p>
-		</article>
-		<aside>
-		<b><p style="background-color:rgb(60, 179, 113);">Where to find me?</p></b>
-		<p>Please feel free to contact me if you have any questions or concerns.</p>
-		</aside>
-	</section>
+	<div class="b"><ul>
+	<a href="https://www.linkedin.com/in/fredricls/"><img border="0" src="images/icon/linkedin.png" title="Fredricls" width="25" height="25"> linkedin</a><br><br>
+	<a href="https://web.facebook.com/fredriclesomar.id"><img border="0" src="images/icon/facebook.png" title="Fredriclesomar.id" width="25" height="25"> Facebook</a><br><br>
+	<a href="https://instagram.com/fredricls"><img border="0" src="images/icon/instagram.png" title="Fredricls" width="25" height="25"> Instagram</a><br><br>
+	<a href="https://www.hackthebox.eu/profile/305771"><img border="0" src="images/icon/htb.png" title="Fredriclesomar" width="25" height="25"> HackTheBox</a></ul><br>
+    </div>
+   </div>
+  </div>
+  </div>
+  <!--skill-->
+  
+<h1>My Skills</h1>
+<p></p>
+<div class="containerskill">
+  <div class="skills linux">Linux Server - 97%</div>
+</div>
+<p></p>
+<div class="containerskill">
+  <div class="skills windows windows">Windows Server - 86%</div>
+</div>
+<p></p>
+<div class="containerskill">
+  <div class="skills redteam">RedTeaming - 93%</div>
+</div>
+<p></p>
+<div class="containerskill">
+  <div class="skills idps">IDS/IPS Suricata and Snort - 84%</div>
+</div>
+<p></p>
+<div class="containerskill">
+  <div class="skills js">HTML & JavaScript - 89%</div>
+</div>
+<p></p>
+
+<div class="containerskill">
+  <div class="skills php">PHP - 77%</div>
+</div>
+
+<p></p>
+<div class="containerskill">
+  <div class="skills python">Python - 87%</div>
+</div>
+
+<p></p>
+<div class="containerskill">
+  <div class="skills docker">Docker - 88%</div>
+</div>
+
+<p></p>
+<div class="containerskill">
+  <div class="skills git">GIT - 90%</div>
+</div>
+
+<p></p>
+<div class="containerskill">
+  <div class="skills wordpress">Wordpress - 76%</div>
+</div>
+  <br><br><br><br>
+  <!--skill-->
+  </div>
+  <div class="main">
+    <h2>HackTheBox</h2>
+    <h5>hackthebox.eu, Jun 3, 2020</h5>
+    <a><img border="0" src="images/htb/htb.gif" title="Fredricls" width="450" height="250"></a>
+	<button class="collapsiblemen">Read more</button>
+	<div class="contentberguna">
+	<p>
+ <iframe src="page/one.htm"  style="
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 500px;
+  "></iframe> </p>
+	</div>
+    <br>
+    <h2>IDS/IPS/NSM - Suricata</h2>
+    <h5>suricata-ids.org -  OISF , Jun 3, 2020</h5>
+    <a><img border="0" src="images/icon/suricata.png" title="Fredricls" width="450" height="250"></a>
+	<button class="collapsiblemen">Read more</button>
+	<div class="contentberguna">
+	<p class="post"><b>Suricata_Ubuntu18_LTS</b></p><a>Intrution Detection Prevention System Suricata</a>
+	<a href="https://github.com/fredriclesomar/Suricata_Ubuntu18_LTS">here.</a>
 	</div>
 </div>
-<!--<iframe class="videoContainer__video" width="2" height="2" src="https://www.youtube.com/embed/pyi0ZfuIIvo?rel=0&amp;controls=0&amp;loop=1;showinfo=0;autoplay=1&mute=1"> 
-</iframe>--> 
-	<br>
-<footer class="container-fluid bg-4 text-center navbarbot">
- <p>Copyright © 2019 Rose | Touch with <span style="color: #e25555;">&#9829;</span><a href="mailto:fredriclesomar@gmail.com?subject=Mail from Github"> Fredric Lesomar</a></p> 
+<div class="footer bg-4 text-center">
+ <p>Copyright © 2020 Rose | Touch with <span style="color: #e25555;">&#9829;</span><a href="mailto:fredriclesomar@gmail.com?subject=Mail from Github"> Fredric Lesomar</a></p>
  <p id="timeiswaktu">Protected by Yondaime Namikaze</p>
-</footer>
+</div>
+
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('rose.js')
@@ -250,5 +546,57 @@ setInterval(refreshTime, 1000);
 <script>
 var video = document.getElementById("myVideo");
 </script>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsiblemen");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
 </html>
