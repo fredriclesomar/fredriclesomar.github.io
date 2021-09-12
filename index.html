@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 <title>Fredric Lesomar Page's</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style/style-menu.css">
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/fredriclesomar/fredriclesomar.github.io/master/images/icon/IMG_20210426_164953.ico">
 <meta charset="UTF-8">
 <meta name="description" content="Fredric Lesomar, The good person and handsome very well. This is official portal Fredric Lesomar, 'Tea Addict, Cybersecurity Enthusiast and Expert Malware Analyst'."/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
@@ -36,7 +37,7 @@ body {
 }
 
 /* Header/logo Title */
-.header {
+.headerheader {
   opacity: 1.5;
   padding: 80px;
   text-align: center;
@@ -48,7 +49,7 @@ body {
 }
 
 /* Increase the font size of the heading */
-.header h1 {
+.headerheader h1 {
   font-family: myFirstFont;
   font-size: 40px;
 }
@@ -72,6 +73,11 @@ body {
 }
 
 /* Change color on hover */
+.right {
+  background-color: #ddd;
+  color: #ddd;
+}
+/* Change color on hover */
 .navbar a:hover {
   background-color: #ddd;
   color: black;
@@ -84,7 +90,7 @@ body {
 }
 
 /* Column container */
-.row {  
+.rowrow {  
   background-color: #666;
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -94,7 +100,7 @@ body {
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
+.sideside {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
   background-color: #242424;
@@ -102,12 +108,22 @@ body {
 }
 
 /* Main column */
-.main {   
+.main-main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: #2f2e2e;
   padding: 20px;
 }
+.main-main a {
+  color: white;
+}
+.main-main h2 {
+  color: white;
+}
+.main-main h5 {
+  color: #29b810;
+}
+
 
 /* Footer */
 .footer {
@@ -122,7 +138,7 @@ body {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row {   
+  .rowrow {   
     flex-direction: column;
   background-color: #666;
   }
@@ -140,7 +156,7 @@ img.a {
   border-radius: 50%;
 }
 
-.card {
+.cardcard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
 }
@@ -152,7 +168,7 @@ img.a {
   text-align: center;
 }
 
-.containerabout::after, .row::after {
+.containerabout::after, .rowrow::after {
   content: "";
   background-color: #666;
   clear: both;
@@ -295,12 +311,12 @@ div.b {
   display: none;
 }
 
-.dropdown {
+.dropdown-dropdown {
   float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.dropdown-dropdown .dropbtn {
   font-size: 17px;    
   border: none;
   outline: none;
@@ -329,7 +345,7 @@ div.b {
   text-align: left;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover, .dropdown-dropdown:hover .dropbtn {
   background-color: #555;
   color: white;
 }
@@ -339,12 +355,12 @@ div.b {
   color: black;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-dropdown:hover .dropdown-content {
   display: block;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+  .topnav a:not(:first-child), .dropdown-dropdown .dropbtn {
     display: none;
   }
   .topnav a.icon {
@@ -365,9 +381,9 @@ div.b {
     display: block;
     text-align: left;
   }
-  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-dropdown {float: none;}
   .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
+  .topnav.responsive .dropdown-dropdown .dropbtn {
     display: block;
     width: 100%;
     text-align: left;
@@ -376,11 +392,80 @@ div.b {
 </style>
 </head>
 <body>
+<!-- partial:index.partial.html -->
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
+    <link rel="stylesgeet" href="https://rawgit.com/creativetimofficial/material-kit/master/assets/css/material-kit.css">
+</head>
+    <nav class="navbar-navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg "  color-on-scroll="100"  id="sectionsNav">
+        <div class="container">
+            <div class="navbar-translate">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="dropdown nav-item">
+                      <a href="#" class="dropdown nav-link" data-toggle="dropdown" aria-expanded="false">
+                          <i class="material-icons">apps</i> Components
+                      </a>
+                      <div class="dropdown-menu dropdown-with-icons">
+                        <a href="#" class="dropdown-item">
+                            <i class="material-icons">layers</i> All Components
+                        </a>
+                        
+                        <a href="#" class="dropdown-item">
+                            <i class="material-icons">content_paste</i> Documentation
+                        </a>
+                      </div>
+                    </li>
+      				<li class="nav-item">
+      					<a class="nav-link" href="javascript:void(0)">
+      						<i class="material-icons">cloud_download</i> xCloud
+      					</a>
+      				</li>
+      				<li class="nav-item">
+      					<a class="nav-link" href="https://www.linkedin.com/in/fredricls/" target="_blank">
+      						<i class="fa fa-linkedin"></i>
+      					</a>
+      				</li>
+      				<li class="nav-item">
+      					<a class="nav-link" href="https://www.facebook.com/fredriclesomar.my.id" target="_blank">
+      						<i class="fa fa-facebook-square"></i>
+      					</a>
+      				</li>
+      				<li class="nav-item">
+      					<a class="nav-link"  href="https://www.instagram.com/fredriclesomar" target="_blank">
+      						<i class="fa fa-instagram"></i>
+      					</a>
+      				</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+</body>
+<!-- partial -->
+  <script  src="./style/menu.js"></script>
+
 <!--<audio loop autoplay>
   <source src="misc/semuaberlalu.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio> -->
-<div class="header">
+<div class="headerheader">
   <h1>D I R G A H A Y U</h1>
   <p>Indonesia <b>Dream</b> Come True</p>
 <!--  <h1>WELCOME</h1>
@@ -389,7 +474,7 @@ div.b {
 </div>
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
-  <div class="dropdown">
+  <div class="dropdown-dropdown">
     <button class="dropbtn">Cyberthread Monitoring 
       <i class="fa fa-caret-down"></i>
     </button>
@@ -399,25 +484,24 @@ div.b {
       <a href="kspmaps.html">Kaspersky</a>
     </div>
   </div>
-  <div class="dropdown">
+  <div class="dropdown-dropdown">
     <button class="dropbtn">Module 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="http://ccna.fredriclesomar.my.id">CCNA - Cisco Networking</a>
+      <a href="#">CCNA - Cisco Networking</a>
     </div>
   </div>
-<div class="dropdown">
+<div class="dropdown-dropdown">
     <button class="dropbtn">Archive 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="https://gallery.fredriclesomar.my.id/">Gallery</a>
-      <a href="https://xcloud.fredriclesomar.my.id/">xCloud</a>
+      <a href="#">Gallery</a>
       <a href="https://fredriclesomar.my.id/sitemap.html">Sitemap</a>
     </div>
   </div>
-  <div class="dropdown">
+  <div class="dropdown-dropdown">
     <button class="dropbtn">Tools 
       <i class="fa fa-caret-down"></i>
     </button>
@@ -427,38 +511,26 @@ div.b {
       <a href="https://whois.fredriclesomar.my.id">Whois</a>
     </div>
   </div> 
-  <a class="right">Goal Status</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
-<div class="row">
-  <div class="side">
-    <div class="card">
+<div class="rowrow">
+  <div class="sideside">
+    <div class="cardcard">
      <div class="a"><img class="a" src="https://raw.githubusercontent.com/fredriclesomar/fredriclesomar.github.io/master/images/tenor.gif" alt="Fredric Lesomar" style="width:200px"></center>
       <div class="a">
         <h2 class="glow">Fredric Lesomar</h2>
 		<a><img border="0" src="images/icon/att.png" title="RedTeam" width="35" height="45"></a>
 		<a><img border="0" src="images/icon/su.png" title="SuperUser" width="45" height="45"></a>
 		<a><img border="0" src="images/icon/def.png" title="BlueTeam" width="45" height="45"></a>
-		<center><img><script src="https://www.hackthebox.eu/badge/305771"></script></img></center>		
+		<center><a href="https://www.hackthebox.eu/profile/305771"><img><script src="https://www.hackthebox.eu/badge/305771"></script></img></center>		
 		<p>I am an ameteur programer and cybersecurity enthusiast.</p>
-	<div class="b"><ul>
-	<a href="https://www.linkedin.com/in/fredricls/"><img border="0" src="images/icon/linkedin.png" title="Fredricls" width="25" height="25"> linkedin</a><br><br>
-	<a href="https://web.facebook.com/fredriclesomar.my.id"><img border="0" src="images/icon/facebook.png" title="Fredriclesomar.my.id" width="25" height="25"> Facebook</a><br><br>
-	<a href="https://instagram.com/fredriclesomar"><img border="0" src="images/icon/instagram.png" title="Fredricls" width="25" height="25"> Instagram</a><br><br>
-	<a href="https://www.hackthebox.eu/profile/305771"><img border="0" src="images/icon/htb.png" title="Fredriclesomar" width="25" height="25"> HackTheBox</a></ul><br>
-    </div>
-   </div>
+	 </div>
   </div>
-  </div>
+</div>
   <!--skill-->
-  
-<h1>My Skills</h1>
-<p></p>
 <div class="containerskill">
   <div class="skills netw">Networking (Cisco, Fortinet, MikroTik, PaloAlto)- 96%</div>
 </div>
-<p></p>
 <p></p>
 <div class="containerskill">
   <div class="skills linux">Linux Server - 97%</div>
@@ -504,10 +576,28 @@ div.b {
 <div class="containerskill">
   <div class="skills wordpress">Wordpress - 81%</div>
 </div>
+<!-- Radio Stream -->
+<script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
+<script type="text/javascript">
+MRP.insert({
+'url':'https://s7.alhastream.com/radio/8340/radio?1605065843',
+'codec':'mp3',
+'volume':100,
+'autoplay':true,
+'jsevents':true,
+'buffering':0,
+'title':'Fantastic Radio',
+'wmode':'transparent',
+'skin':'oldradio',
+'width':205,
+'height':132
+});
+</script>
+	
   <br><br><br><br>
   <!--skill-->
   </div>
-  <div class="main">
+  <div class="main-main">
     <h2>HackTheBox</h2>
     <h5>hackthebox.eu, May 5, 2021</h5>
     <a><img border="0" src="images/htb/htb.gif" title="Fredricls" width="450" height="250"></a>
@@ -531,9 +621,8 @@ div.b {
     <a><img border="0" src="images/icon/suricata.png" title="Fredricls" width="450" height="250"></a>
 	<button class="collapsiblemen">Read more</button>
 	<div class="contentberguna">
-	<p class="post"><b>Suricata_Ubuntu18_LTS</b></p><a>Intrution Detection Prevention System Suricata</a>
-	<a href="https://github.com/fredriclesomar/Suricata_Ubuntu18_LTS">here.</a>
-		<br>
+	<p class="post"><b>Suricata_Ubuntu18_LTS</b></p>
+	<a href="https://github.com/fredriclesomar/Suricata_Ubuntu18_LTS">Intrution Detection Prevention System Suricata ></a>
 	</div>
 </div>
 <div class="footer bg-4 text-center">
@@ -565,29 +654,6 @@ setInterval(refreshTime, 1000);
 var video = document.getElementById("myVideo");
 </script>
 
-
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
 <script>
 var coll = document.getElementsByClassName("collapsiblemen");
 var i;
@@ -615,24 +681,5 @@ function myFunction() {
   }
 }
 </script>
-
-<!-- Radio Stream -->
-<script type="text/javascript" src="https://hosted.muses.org/mrp.js"></script>
-<script type="text/javascript">
-MRP.insert({
-'url':'https://s7.alhastream.com/radio/8340/radio?1605065843',
-'codec':'mp3',
-'volume':100,
-'autoplay':true,
-'jsevents':true,
-'buffering':0,
-'title':'Fantastic Radio',
-'wmode':'transparent',
-'skin':'oldradio',
-'width':205,
-'height':132
-});
-</script>
-	
 </body>
 </html>
