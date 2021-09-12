@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="10">
 <title>Offline(?)</title>
 <style>
 		body,h1{margin:0}a,body{color:#4B4332}body{font-size:16px;padding:20px;background:#EDE7DA}#box-msg{position:absolute;top:50%;transform:translateY(-50%);padding:30px}img{position:fixed;bottom:0;right:10px;width:250px;max-width:30%}h1{font-size:3em;font-family:"Times New Roman",serif}p{margin:10px 0;line-height:1.5;font-size:1.5em;font-family:Arial,serif}a{font-weight:700}@media screen and (max-height:320px){img{max-width:20%}}@media screen and (min-width:1440px){h1{font-size:4em}p{font-size:2em}img{width:500px;max-width:25%}}@media screen and (min-width:1920px){h1{font-size:4.5em}p{font-size:2.5em}}
@@ -27,16 +28,10 @@
                         document.querySelector("p").innerHTML = "Sepertinya jaringan internet Anda sedang <b>sibuk / offline</b>,<br/> harap <b>cek kembali koneksi internet Anda!</b>";
                     }
                 });
-		
-	<p id="waktuismoney"></p>
+	
 
-	<script>
-		var d = new Date();
-		document.getElementById("waktuismoney").innerHTML = d;
-	</script>
-
-              <!--  oReq.open("GET", "https://cek.mittui.com/?_=" + new Date().getTime()); -->
-                <!--oReq.send(); -->
+              oReq.open("GET", "https://cek.mittui.com/?_=" + new Date().getTime()); 
+              oReq.send();
 
                 setTimeout(function () {
                     if (!req) {
@@ -53,6 +48,12 @@
 
 <h1>Error: Connection lost: <a>Check your connection and try again</a></h1>
 <p></p>
+		
+<p id="waktuismoney"></p>
+<script>
+var d = new Date();
+document.getElementById("waktuismoney").innerHTML = d;
+</script>
 </div>
 </body>
 </html>
