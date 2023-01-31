@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ 
+body{
+	background-image: url("3274408.jpg");
+	height: 100%; 
+    font-family: 'Roboto', sans-serif;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: #8d9d03;
+}
+ 
+.kotak{
+    width: 280px;
+    height: 40px;
+    border: solid 3px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8d9d03;
+    margin-bottom: 10px;
+}
+ 
+.kotak:hover{
+    background-color: rgb(120, 350, 80);
+}
+ 
+.header{
+    text-align: center;
+    font-size: 35px;
+}
+ 
+.header img{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+ 
+.footer{
+    text-align: right;
+    margin-top: 50px;
+    font-size: 20px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+h2{
+	color: #f56b05;
+}
+h6{
+	background-color: rgb(245, 107, 5, 0.8);
+	font-size: 13px;
+    color: #f8d5bb;
+}
+
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+  background-image: url("oppai.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("oppai.jpg");
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: white;
+}
+
+.glow {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #dee010, 0 0 40px #dee010, 0 0 50px #dee010, 0 0 60px #dee010, 0 0 70px #dee010, 0 0 80px #dee010;
+  }
+}
