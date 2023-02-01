@@ -62,6 +62,26 @@ document.onkeydown = function(e) {
 };
 </script>
 
+<script>
+
+       document.onkeydown = function (e) {
+       e = e || window.event;
+      
+       if (!e.ctrlKey) return;
+      
+       var code = e.which || e.keyCode;
+      
+       switch (code) {
+       case 85:
+       //case 117:
+       case 83:
+       e.preventDefault();
+       e.stopPropagation();
+	   alert("PM by sosmed, kalau mau scriptnya ya :P");
+       break;
+       }
+       };
+</script> 
 </body>
  <script>
     if ('serviceWorker' in navigator) {
