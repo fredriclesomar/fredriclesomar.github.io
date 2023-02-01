@@ -14,7 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons">
     
 </head>
-<body>
+<body oncontextmenu="return false;">
 <div class="smartphone">
     <div class="header">
         <img src="https://raw.githubusercontent.com/fredriclesomar/fredriclesomar.github.io/master/images/fredricles.gif" alt="Ganteng Limited">
@@ -45,6 +45,22 @@ var snowStorm=null;function SnowStorm(){this.flakesMax=128,this.flakesMaxActive=
 	<div class='snow-flakes'> <div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div><div class='flake'></div></div>
 		
 <!--akhir dari embun pagi --> 
+	
+<script type="text/javascript">
+document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 67 || 
+             e.keyCode === 86 || 
+             e.keyCode === 85 || 
+             e.keyCode === 117)) {
+            
+            return false;
+        } else {
+            return true;
+        }
+};
+</script>
+
 </body>
  <script>
     if ('serviceWorker' in navigator) {
