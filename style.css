@@ -127,3 +127,57 @@ h6{
     text-shadow: 0 0 20px #fff, 0 0 30px #dee010, 0 0 40px #dee010, 0 0 50px #dee010, 0 0 60px #dee010, 0 0 70px #dee010, 0 0 80px #dee010;
   }
 }
+
+
+
+/* widget sticky :P */
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #ffffff;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#status {
+  top: 80px;
+  background-color: #4CAF50;
+}
+
+#otaku {
+  top: 120px;
+  background-color: #2196F3;
+}
+
+#news {
+  top: 160px;
+  background-color: #f44336;
+}
+
+#sewot {
+  top: 200px;
+  background-color: #b44334;
+}
+
+#tespeed {
+  top: 240px;
+  background-color: #f39c12;
+}
+
+#whois {
+  top: 280px;
+  background-color: #7d3c98;
+}
+
+#chiper {
+  top: 320px;
+  background-color: #909497;
+}
