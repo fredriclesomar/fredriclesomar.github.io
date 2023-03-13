@@ -182,7 +182,12 @@ h6{
   background-color: #05dde3;
 }
 
-#chiper {
+#dig {
   top: 360px;
+  background-color: #e52bd7;
+}
+
+#chiper {
+  top: 4000px;
   background-color: #909497;
 }
