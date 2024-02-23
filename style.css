@@ -10,6 +10,12 @@ body{
     color: #8d9d03;
 }
  
+.verified-icon {
+    width: 18px;
+    height: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+}
 .kotak{
     width: 280px;
     height: 40px;
