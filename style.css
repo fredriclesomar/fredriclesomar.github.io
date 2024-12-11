@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
  
 body{
-	background-image: url("https://raw.githubusercontent.com/fredriclesomar/fredriclesomar.github.io/master/images/icon/sakura.png");
+	background-image: url("https://raw.githubusercontent.com/fredriclesomar/fredriclesomar.github.io/refs/heads/master/images/myID.webp");
 	height: 100%; 
     font-family: 'Roboto', sans-serif;
 	background-position: center;
@@ -74,7 +74,7 @@ h6{
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
-  background-image: url("https://raw.githubusercontent.com/fredriclesomar/fredriclesomar.github.io/master/images/yahmete.jpg");
+  background-image: url("https://raw.githubusercontent.com/fredriclesomar/fredriclesomar.github.io/refs/heads/master/images/mine.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
