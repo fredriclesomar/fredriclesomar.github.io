@@ -71,7 +71,7 @@ h6{
   height: 640px;
   margin: auto;
   border: 16px solid;
-  border: #e7e7e7;
+  border-color: #e7e7e7;
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
