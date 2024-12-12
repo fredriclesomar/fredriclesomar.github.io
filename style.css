@@ -70,7 +70,8 @@ h6{
   width: 360px;
   height: 640px;
   margin: auto;
-  border: 16px black solid;
+  border: 16px solid;
+  border-color: #e2b123 ;
   border-top-width: 60px;
   border-bottom-width: 60px;
   border-radius: 36px;
