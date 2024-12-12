@@ -33,6 +33,7 @@ body{
  
 .kotak:hover{
     background-color: rgb(120, 350, 80);
+    opacity: 2.0;
 }
  
 .header{
