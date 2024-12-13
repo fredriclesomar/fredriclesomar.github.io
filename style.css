@@ -52,7 +52,7 @@ body{
     margin-top: 50px;
     font-size: 20px;
     font-color: #FFFFFF
-	position: fixed;
+	position: right;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -136,8 +136,6 @@ h6{
     text-shadow: 0 0 20px #fff, 0 0 30px #dee010, 0 0 40px #dee010, 0 0 50px #dee010, 0 0 60px #dee010, 0 0 70px #dee010, 0 0 80px #dee010;
   }
 }
-
-
 
 /* widget sticky :P */
 #mySidenav a {
